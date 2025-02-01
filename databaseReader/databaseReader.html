@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>database reader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>database reader</h1>
+    
+    <input type="file" id="file-upload" accept=".db" />
+    <select id="table-dropdown" disabled>
+        <option value="">select a table</option>
+    </select>
+    
+    <h2>table data</h2>
+    <div id="table-data"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
